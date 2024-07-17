@@ -4,10 +4,15 @@ from dynatrace.opentelemetry.tracing.api import configure_dynatrace
 import azure.functions as func
 import logging
 from dynatrace.opentelemetry.azure.functions import wrap_handler
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
+
 
 tracer_provider = configure_dynatrace(
     resource=Resource.create({"my.resource.attribute": "My Resource"})
 )
+
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 @wrap_handler
 @app.route(route="http_trigger")

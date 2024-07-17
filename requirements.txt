@@ -4,3 +4,5 @@
 
 azure-functions
 dynatrace-opentelemetry-azure-functions
+dynatrace-opentelemetry
+opentelemetry-sdk

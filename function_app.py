@@ -10,8 +10,9 @@ logging.basicConfig(level=logging.DEBUG)
 
 
 tracer_provider = configure_dynatrace(
-    resource=Resource.create({"my.resource.attribute": "My Resource"})
+    resource=Resource.create({ResourceAttributes.SERVICE_NAME: "FunctionAppDemopython"})
 )
+
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 @wrap_handler

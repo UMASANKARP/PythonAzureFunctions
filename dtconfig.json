@@ -1,0 +1,8 @@
+{
+  "Tenant": "aqi25304",
+  "ClusterID": 445768248,
+  "Connection": {
+    "BaseUrl": "https://aqi25304.live.dynatrace.com",
+    "AuthToken": "dt0a01.aqi25304.7b90e5759071111e20f88dd7f841890ce7c6a56ba0f9c9040bca6adc7942e07a"
+  }
+}

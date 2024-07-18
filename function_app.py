@@ -39,7 +39,7 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
         response_message = f"Hello, {name}. This HTTP triggered function executed successfully."
     else:
         response_message = (
-            "Hence Python Demo Accomplished. Thanks team for giving such a nice task"
+            "Azure Function Tracing using DT"
         )
 
     logging.info("Sending metrics to Dynatrace.")
